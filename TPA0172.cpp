@@ -37,6 +37,7 @@ void TPA::begin(uint8_t address, uint8_t Volume, uint8_t Control) {
 	_address = address;
 	Wire.begin();
 	
+	get_registers();
 	if(Volume > 0x3F)
 	  Volume = 0x3F;
 	  
@@ -44,10 +45,11 @@ void TPA::begin(uint8_t address, uint8_t Volume, uint8_t Control) {
 	_TPA_Regs[LEFTGAIN_BTL] = Volume;
 	_TPA_Regs[RIGHTGAIN_SE] = Volume;
 	_TPA_Regs[LEFTGAIN_SE] = Volume;
-	_TPA_Regs[MASK_REGISTER] = 0x00;
+	_TPA_Regs[MASK_REGISTER] = 0xFF;
 	_TPA_Regs[CONTROL_REGISTER] = Control;
 	
 	write_registers();
+	
 }
 
 void TPA::get_registers(void) {
