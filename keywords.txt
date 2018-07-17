@@ -7,16 +7,16 @@
 #######################################
 
 TPA	KEYWORD1
-TPA0172 KEYWORD1
+TPA0172	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin KEYWORD2
-setgain KEYWORD2
-getgain KEYWORD2
-setvolume KEYWORD2
+begin	KEYWORD2
+setgain	KEYWORD2
+getgain	KEYWORD2
+setvolume	KEYWORD2
 Increment_Volume	KEYWORD2
 Decrement_Volume	KEYWORD2
 setmask	KEYWORD2
@@ -30,10 +30,10 @@ unmute	KEYWORD2
 # Constants (LITERAL1)
 #######################################
 
-TPA0172ADDRESS0 LITERAL1
-TPA0172ADDRESS1 LITERAL1
-TPA0172ADDRESS2 LITERAL1
-TPA0172ADDRESS3 LITERAL1
+TPA0172ADDRESS0	LITERAL1
+TPA0172ADDRESS1	LITERAL1
+TPA0172ADDRESS2	LITERAL1
+TPA0172ADDRESS3	LITERAL1
 BTL_GAIN	LITERAL1
 SE_GAIN	LITERAL1
 RIGHTGAIN_BTL	LITERAL1
